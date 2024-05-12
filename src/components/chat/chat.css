@@ -1,0 +1,182 @@
+.chat{
+    flex: 2;
+    border-left: 1px solid #dddddd35;
+    border-right: 1px solid #dddddd35;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatTop{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddddd35;
+}
+
+.chatuserInfo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.chatuserInfo img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chatTexts{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.chatTexts span{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.chatTexts p{
+    font-size: 14px;
+    font-weight: 300;
+    columns: #a5a5a5;
+}
+
+.chatIcons{
+    display: flex;
+    gap: 20px;
+}
+
+.chatIcons img{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px !important;
+    cursor: pointer;
+}
+
+.chatCenter{
+    padding: 20px;
+    flex: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chatCenter .message{
+    display: flex;
+    align-items: center;
+    max-width: 70%;
+    gap: 20px;
+}
+
+.chatCenter .own{
+    align-self: self-end;
+}
+
+.chatCenter .own .messageTexts p{
+    background-color: #5183fe;
+}
+
+.message img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.message .messageTexts{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 7px;
+}
+
+.message .messageTexts p{
+    padding: 20px;
+    background-color: rgba(17, 25, 40, 0.3);
+    border-radius: 10px;
+}
+
+.messageTexts span{
+    font-size: 13px;
+    color: lightgrey;
+}
+
+.own .messageTexts img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.chatBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    border-top: 1px solid #dddddd35;
+}
+
+.chatBottomIcons{
+    display: flex;
+    gap: 20px;
+}
+
+.chatBottomIcons img,
+.chatEmoji img
+{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.chatMsgInput{
+    background-color: rgba(17, 25, 40, 0.5);
+    flex: 1;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px
+}
+
+.chatMsgInput:disabled{
+    cursor: not-allowed;
+}
+
+.chatEmoji{
+    position: relative;
+}
+
+.chatEmojiPicker{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+}
+
+.chatBtn{
+    background-color: #5183fe;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.chatBtn:disabled{
+    background-color: #5182feb4;
+    cursor: not-allowed;
+}
+
+.chatCenter span{
+    font-size: 12px;
+    font-weight: 100;
+    color: #a5a5a5;
+}
